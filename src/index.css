@@ -1,120 +1,44 @@
-body {
-    font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+/**
+ * created by ffm 2017.10.27
+ * CSS命名遵从BEM规范，BEM的意思就是块（block）、元素（element）、修饰符（modifier）
+ * 
+ * .site-search{}  块 
+ * .site-search__field{}  元素 
+ * .site-search--full{}  修饰符   
+ *  .person{}  
+    .person__hand{}  
+    .person--female{}  
+    .person--female__hand{}  
+    .person__hand--left{}    
+ */
+@media (min-width: 600px) {
+	.root-container {
+		width: 90%;
+	}
 }
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-p,
-blockquote,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-pre,
-form,
-fieldset,
-legend,
-button,
-input,
-textarea,
-th,
-td {
-    margin: 0;
-    padding: 0;
+@media (min-width: 992px) {
+	.root-container {
+		width: 80%;
+	}
+}
+@media (min-width: 1200px) {
+	.root-container {
+  		width: 60%;
+	}
 }
 
-body {
-	background: #fff;
+.root-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  min-width: 370px;
 }
 
-body,
-button,
-input,
-select,
-textarea {
-    font: 12px/1.5tahoma, arial, \5b8b\4f53;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-size: 100%;
-    text-align: center;
-}
-
-address,
-cite,
-dfn,
-em,
-var {
-    font-style: normal;
-}
-
-code,
-kbd,
-pre,
-samp {
-    font-family: couriernew, courier, monospace;
-}
-
-small {
-    font-size: 12px;
-}
-
-ul,
-ol {
-    list-style: none;
-}
-
-a {
-    font-size: 12px;
-    text-decoration: none;
-}
-a:link {
-    color: #000;
-}
-a:visited {
-    color: #000;
-}
-a:hover {
-    text-decoration: none;
-    cursor: pointer;
-}
-a:active {
-    color: #000;
-}
-sup {
-    vertical-align: text-top;
-}
-
-sub {
-    vertical-align: text-bottom;
-}
-
-legend {
-    color: #000;
-}
-
-fieldset,
-img {
-    border: 0;
-}
-p {
-    text-align: center;
-}
-button,
-input,
-select,
-textarea {
-    font-size: 100%;
+footer {
+	height: 30px;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: flex-end;
 }

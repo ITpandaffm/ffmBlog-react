@@ -1,4 +1,4 @@
-.contact-btn {
+.info__contact-btn {
 	width: 92px;
 	height: 30px;
 	border-radius: 4px;
@@ -9,7 +9,7 @@
 	margin: 15px auto;
 	color: #50c87e;
 }
-.contact-btn:hover {
+.info__contact-btn:hover {
 	background: rgba(8, 166, 100, .06);
 	cursor: pointer;
 }

@@ -1,7 +1,22 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
-import App from './App'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+import './normalize.css'
+import './index.css'
+import 'antd/dist/antd.css'
+
+import HomePage from './views/HomePage'
+import ArticlesPage from './views/ArticlesPage'
+import LifePage from './views/LifePage'
+
+ReactDOM.render((
+  <Router>
+    <div className="root-container">
+      <Route exact path="/" component={HomePage}></Route>
+      <Route path="/articles" component={ArticlesPage}></Route>
+      <Route path="/life" component={LifePage}></Route>
+    </div>
+  </Router>
+), document.getElementById('root'))
 

@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+
+import { Divider, } from 'antd'
 import './index.css'
 
 const mockData = {
@@ -35,9 +37,7 @@ export default class Content extends Component {
 						<span>展开</span>
 					</ul>
 				</div>
-				<div className="deperator">
-					<span className="sort-selected">最新文章</span>
-				</div>
+				<Divider>文章分类</Divider>
 				<div className="article">
 					{
 						arr.map((value, index)=> <ArticleItem 
@@ -52,7 +52,7 @@ export default class Content extends Component {
 							/>)
 					}
 				</div>
-				<FooterDeperator />
+				<Divider>我是有底线的</Divider>
 			</div>
 		)
 	}
