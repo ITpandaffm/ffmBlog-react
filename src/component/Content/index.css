@@ -1,0 +1,95 @@
+.sort ul {
+	width: 80%;
+	margin: 20px auto;
+}
+.sort ul li {
+	margin: 8px;
+	display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 0 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    color: gray;
+}
+.sort ul li:hover {
+	background: rgba(0, 0, 0, .1);
+	border-color: transparent;
+	cursor: pointer;
+}
+
+.deperator {
+	margin: 10px 0;
+}
+
+.deperator span.sort-selected {
+	display: inline-block;
+	font-weight: bold;
+}
+
+.deperator span.sort-selected::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 1px;
+	margin: 10px;
+	background: #f0f0f0;
+}
+.article-container {
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+	padding-bottom: 10px;
+}
+.article-container:hover {
+	cursor: pointer;
+}
+
+.article--titile {
+	text-align: left;
+	margin: 10px;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+.article--content {
+	text-align: left;
+	text-indent: 10px;
+	line-height: 26px;
+	letter-spacing: 0.3px;
+	cursor: pointer;
+	color: #444;
+}
+
+.article-info {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+
+.article__timestamp {
+	align-self: flex-start;
+}
+
+.article--footer {
+	display: block;
+	margin: 30px auto;
+	width: 60px;
+}
+.article--footer::before {
+	position: absolute;
+	margin-left: -110px;
+	margin-top: 9px;
+	content: "";
+	width: 100px;
+	height: 1px;
+	background: #f00;
+}
+.article--footer::after {
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 9px;
+	content: "";
+	width: 100px;
+	height: 1px;
+	background: #f00;
+}

@@ -1,0 +1,75 @@
+nav {
+	position: fixed;
+	top: 50%;
+	left: 20px;
+	margin-top: -50px;
+	z-index: 1;
+	display: table;
+}
+nav ul {
+	position: absolute;
+	left: 5px;
+	top: -150px;
+}
+nav li {
+	position: relative;
+	/*left: -150px;  出场动画的初始值*/  
+	margin-bottom: 20px;
+	width: 98px;
+	text-align: center;
+	border-radius: 20px;
+	line-height: 36px;
+	border: 1px solid rgba(105, 105, 105, 0.52);
+}
+nav li:hover {
+	cursor: pointer;
+	color: rgba(105, 105, 105, 0.52);
+}
+nav li a {
+	display: block;
+}
+
+.menu svg {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.menu path {
+  fill: none;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -moz-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -o-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -ms-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  stroke-width: 40px;
+  stroke-linecap: round;
+  stroke: rgba(0,0,0,0.8);
+  stroke-dashoffset: 0px;
+}
+
+/*.menu--normal:hover path{
+	stroke: rgb(255, 137, 0);
+}*/
+.menu path#top,
+.menu path#bottom {
+  stroke-dasharray: 240px 950px;
+}
+
+.menu--normal path#middle {
+  stroke-dasharray: 240px 240px;
+}
+.menu--expend path#top,
+.menu--expend path#bottom {
+  stroke-dashoffset: -650px;
+  stroke-dashoffset: -650px;
+}
+.menu--expend path#middle {
+  stroke-dashoffset: -115px;
+  stroke-dasharray: 1px 220px;
+  /*opacity: 0;*/
+}

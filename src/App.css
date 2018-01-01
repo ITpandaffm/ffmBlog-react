@@ -1,0 +1,44 @@
+/**
+ * created by ffm 2017.10.27
+ * CSS命名遵从BEM规范，BEM的意思就是块（block）、元素（element）、修饰符（modifier）
+ * 
+ * .site-search{}  块 
+ * .site-search__field{}  元素 
+ * .site-search--full{}  修饰符   
+ *  .person{}  
+    .person__hand{}  
+    .person--female{}  
+    .person--female__hand{}  
+    .person__hand--left{}    
+ */
+@media (min-width: 600px) {
+	.container {
+		width: 90%;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+		width: 80%;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+  		width: 60%;
+	}
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  min-width: 600px;
+}
+
+footer {
+	height: 30px;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: flex-end;
+}
