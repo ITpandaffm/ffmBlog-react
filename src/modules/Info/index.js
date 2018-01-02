@@ -3,21 +3,37 @@ import './index.css'
 
 import { Avatar, Button, } from 'antd'
 
-import './index.css'
+import ContactBlock from '../../components/ContactBlock'
 
 export default class Info extends Component {
+	constructor() {
+		super()
+		this.state = {
+			isContactBlockExpend: false,
+		}
+	}
+	componentWillMount() {
+		this._toggleContactBlock = this._toggleContactBlock.bind(this)
+	}
 	render(){
 		return(
 			<div style={{overflow:'hidden'}}>
 			  <Avatar src="http://opx5dtob7.bkt.clouddn.com/avatar.jpeg" shape="circle" style={styles.avatar}/>
 			  <p style={styles.title}>冯富铭</p>
 			  <p style={styles.desc}>全栈菜鸟工程师</p>
-			  <div className="info__contact-btn">
+			  <div className="info__contact-btn" onClick={this._toggleContactBlock}>
 					Contact me
 			  </div>
+				<ContactBlock isExpend={this.state.isContactBlockExpend} />
 			  <p style={styles.visitors}>1002人来过</p>
 			</div>
 		)
+	}
+	_toggleContactBlock() {
+			const isExpend = this.state.isContactBlockExpend
+			this.setState({
+				isContactBlockExpend: !isExpend,
+			})
 	}
 }
 
