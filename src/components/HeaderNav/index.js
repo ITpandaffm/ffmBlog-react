@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 import { Avatar, Row, Col, Affix, Button, } from 'antd'
 
@@ -25,7 +26,7 @@ const styles = {
 export default class HeaderNav extends Component {
   render() {
     return (
-      <Affix offsetTop={0}>
+      <Affix offsetTop={0} style={{width: '100%'}}>
         <div style={styles.container}>
           <Row type="flex" justify="center" align="middle" style={{height: '60px'}}>
             <Col span={6} xs={8}>
@@ -40,9 +41,9 @@ export default class HeaderNav extends Component {
             </Col>
             <Col span={10} xs={16}>
               <Row type="flex" justify="end">
-                <Button type="default" style={{marginRight:'8px'}}>首页</Button>                
-                <Button type="default" style={{marginRight:'8px'}}>文章</Button>                
-                <Button type="default" style={{marginRight:'8px'}}>生活</Button>                
+                <Link to="/"><Button type="default" style={{marginRight:'8px'}}>首页</Button></Link>                
+                <Link to="/articles"><Button type="default" style={{marginRight:'8px'}}>文章</Button></Link>                
+                <Link to="/life"><Button type="default" style={{marginRight:'8px'}}>生活</Button></Link>                
               </Row>
             </Col>
           </Row>

@@ -44,6 +44,7 @@ const styles = {
 		height: '200px',
 		borderRadius: '50%',
 		margin: '40px auto',
+		marginTop: '50px',
 	},
 	title: {
 		fontSize: '22px',
