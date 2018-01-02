@@ -1,42 +1,4 @@
-.sort ul {
-	width: 80%;
-	margin: 20px auto;
-}
-.sort ul li {
-	margin: 8px;
-	display: inline-block;
-    height: 30px;
-    line-height: 30px;
-    font-size: 14px;
-    padding: 0 15px;
-    border-radius: 15px;
-    border: 1px solid rgba(0, 0, 0, .1);
-    color: gray;
-}
-.sort ul li:hover {
-	background: rgba(0, 0, 0, .1);
-	border-color: transparent;
-	cursor: pointer;
-}
-
-.deperator {
-	margin: 10px 0;
-}
-
-.deperator span.sort-selected {
-	display: inline-block;
-	font-weight: bold;
-}
-
-.deperator span.sort-selected::after {
-	position: absolute;
-	content: "";
-	width: 100%;
-	height: 1px;
-	margin: 10px;
-	background: #f0f0f0;
-}
-.article-container {
+s.article-container {
 	border-bottom: 1px solid rgba(0, 0, 0, .1);
 	padding-bottom: 10px;
 }

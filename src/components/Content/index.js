@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 import { Divider, } from 'antd'
 import './index.css'
 
+import ArticleTags from '../ArticleTags'
+
 const mockData = {
 	code: 200,
 	data: [
@@ -11,6 +13,20 @@ const mockData = {
 		{title: '我是大标题3', content: '好多内容类别周边动态／Related Project Update置信度Announcement起始时间2017-09-28内容Partial Application 提案为 JavaScript 提供了原生的柯里化支持（注：Partial Application 和 Currying 并…', timeStamp: '2014-10-12', likesNum: 30, commentsNum: 23},
 	]
 }
+const tagArr = [
+	'All',
+	'Node.js',
+	'Css3',
+	'EcmaScript6',
+	'EcmaScript5',
+	'Webpack',
+	'Gulp',
+	'Grunt',
+	'AngularJS',
+	'React',
+	'React-native',
+	'Vue',
+]
 
 export default class Content extends Component {
 	
@@ -26,17 +42,7 @@ export default class Content extends Component {
 		let arr = mockData.data
 		return (
 			<div className="content-container">
-				<div className="sort">
-					<ul>
-						<li>全部 <span>63</span></li>
-						<li>Javascript <span>14</span></li>
-						<li>Css <span>24</span></li>
-						<li>Node.js <span>12</span></li>
-
-						<li>Node.js <span>12</span></li>
-						<span>展开</span>
-					</ul>
-				</div>
+				<ArticleTags data={tagArr} />
 				<Divider>文章分类</Divider>
 				<div className="article">
 					{

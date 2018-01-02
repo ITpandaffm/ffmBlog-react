@@ -43,7 +43,7 @@ const styles = {
 		width: '200px',
 		height: '200px',
 		borderRadius: '50%',
-		margin: '50px auto',
+		margin: '40px auto',
 	},
 	title: {
 		fontSize: '22px',
@@ -55,6 +55,6 @@ const styles = {
 	visitors: {
 		fontSize: '14px',
 		color: '#ccc',
-		marginTop: '15px',
+		marginTop: '10px',
 	}
 }
