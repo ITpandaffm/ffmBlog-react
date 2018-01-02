@@ -47,6 +47,7 @@ const styles = {
 	},
 	title: {
 		fontSize: '22px',
+		marginBottom: '0',
 	},
 	desc: {
 		fontSize: '16px',

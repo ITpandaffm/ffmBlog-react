@@ -39,9 +39,3 @@
   min-width: 370px;
 }
 
-footer {
-	height: 30px;
-	margin-bottom: 10px;
-	display: flex;
-	align-items: flex-end;
-}

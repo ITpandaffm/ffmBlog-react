@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import HeaderNav from '../../components/HeaderNav'
 import Info from '../../modules/Info'
 import Content from '../../components/Content'
+import Footer from '../../components/Footer'
 
 export default class HomePage extends Component {
   render() {
@@ -11,6 +12,7 @@ export default class HomePage extends Component {
         <HeaderNav />
         <Info />
         <Content />
+        <Footer />
       </div>
     )
   }
